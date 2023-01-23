@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Calculo IMC</title>
+</head>
+
+<body>
+    
+
+<h1><U>CALCULO IMC</U></h1>
+ 
+
+
+<H2>Veja a interpretação do <i>IMC</i></H2>
+ 
+<ul>
+	<li>MENOR QUE 18,5	MAGREZA</li>
+	<li>ENTRE 18,5 E 24,9	NORMAL</li>
+	<li>ENTRE 25,0 E 29,9	SOBREPESO</li>
+	<li>ENTRE 30,0 E 39,9	OBESIDADE</li>
+	<li>MAIOR QUE 40,0	OBESIDADE GRAVE</li>
+</ul>
+
+<script>
+
+	let peso = prompt("insira seu peso");
+	let altura = prompt("insira sua altura");
+	let imc = peso/altura**2
+
+	if(imc < 18.5){
+    alert("você está abaixo do peso.")
+}	else if(imc < 25){
+    alert("você no está peso ideal.")
+} else if(imc < 30){
+    alert("você está acima do peso.")
+} else if(imc < 40){
+    alert("você tem obesidade tipo 2.")
+}else {
+    alert("você tem obesidade tipo 3.")
+    	alert("seu problema é grave, procure um profissional da saúde.");
+}
+
+
+</script>
+
+	</body>
+</html>
