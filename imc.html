@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -8,9 +8,29 @@
 </head>
 
 <body>
+
+<style>
+
+body {
+    text-align: center;
+    background-color: rgb(142, 142, 146);
+
+}
+
+h1 {
+    font-size: 45px;
+    color: rgb(8, 3, 80);
+    }
     
 
-<h1><U>CALCULO IMC</U></h1>
+u{
+color: rgb(8, 3, 80);
+}
+
+
+</style>
+
+<u><h1>CALCULO IMC</h1></u>
  
 
 
@@ -24,27 +44,31 @@
 	<li>MAIOR QUE 40,0	OBESIDADE GRAVE</li>
 </ul>
 
-<script>
 
-	let peso = prompt("insira seu peso");
-	let altura = prompt("insira sua altura");
-	let imc = peso/altura**2
+    
+    <script>
 
-	if(imc < 18.5){
-    alert("você está abaixo do peso.")
-}	else if(imc < 25){
-    alert("você no está peso ideal.")
-} else if(imc < 30){
-    alert("você está acima do peso.")
-} else if(imc < 40){
-    alert("você tem obesidade tipo 2.")
-}else {
-    alert("você tem obesidade tipo 3.")
-    	alert("seu problema é grave, procure um profissional da saúde.");
-}
+	    let peso = prompt("insira seu peso");
+	    let altura = prompt("insira sua altura");
+	    let imc = peso/altura**2
+
+        alert(`Seu IMC é ${imc}`);
+	    if(imc < 18.5){
+                alert("você está abaixo do peso.")
+    }	    else if(imc < 25){
+                alert("você no está peso ideal.")
+    }       else if(imc < 30){
+                alert("você está acima do peso.")
+    }       else if(imc < 40){
+                alert("você tem obesidade tipo 2.")
+    }       else {
+                alert("você tem obesidade tipo 3.")
+    	        alert("seu problema é grave, procure um profissional da saúde.");
+    }
 
 
-</script>
+    </script>
 
 	</body>
+
 </html>
